@@ -8,12 +8,20 @@
 </template>
 
 <script>
-export default {
-  name: "note",
+import Vue from 'vue';
+
+const note = new Vue({
+  data: {
+    name: "note",
+  },
   method: {
-    createNote: () => {}
+    createNote: () => {
+      const { log } = console;
+      log('our first vue app')
+    }
   }
-};
+});
+export default note;
 </script>
 
 <style scoped>
