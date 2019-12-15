@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <h2>Quick Notes</h2>
-    <RiteIt />
+    <Note />
   </div>
 </template>
 
 <script>
-import RiteIt from './components/note.vue';
+import Note from './components/note.vue';
 
 export default {
   name: 'app',
   components: {
-    RiteIt
+    Note
   }
 }
 </script>

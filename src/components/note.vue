@@ -1,8 +1,9 @@
 <template>
-  <div class="note">
+  <div id="note">
     <section>
-      <section class="new-note" v-on:click="createNote"></section>
+      <section class="new-note"></section>
       <textarea type="text" class="input-area" />
+      <p>{{ message }}</p>
     </section>
   </div>
 </template>
@@ -10,18 +11,19 @@
 <script>
 import Vue from 'vue';
 
-const note = new Vue({
+export default new Vue({
   data: {
-    name: "note",
+    message: "note",
   },
-  method: {
-    createNote: () => {
-      const { log } = console;
-      log('our first vue app')
-    }
-  }
+  // methods: {
+  //   createNote: function () {
+  //     const { log } = console;
+  //     this.message = 'HEllo world'
+  //     log('our first vue app');
+  //   }
+  // }
 });
-export default note;
+
 </script>
 
 <style scoped>
