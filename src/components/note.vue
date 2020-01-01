@@ -15,13 +15,6 @@ export default new Vue({
   data: {
     message: "note",
   },
-  // methods: {
-  //   createNote: function () {
-  //     const { log } = console;
-  //     this.message = 'HEllo world'
-  //     log('our first vue app');
-  //   }
-  // }
 });
 
 </script>
